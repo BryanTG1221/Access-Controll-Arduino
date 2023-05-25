@@ -1,0 +1,27 @@
+.cameraContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 50px;
+}
+
+.listCamera {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.rowUL {
+  display: flex;
+  gap: 15px;
+}
+
+.titleSection {
+  font-size: 1.125rem;
+  color: var(--colorIcons);
+  margin: 0;
+}

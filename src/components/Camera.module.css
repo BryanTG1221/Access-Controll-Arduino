@@ -1,0 +1,76 @@
+.container {
+  width: 124px;
+  height: 147px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--backgroundColorSideBar);
+  border-radius: 20px;
+  border: 0.5px solid #D7D7D7;
+}
+
+.row {
+  margin: 15px;
+  display: flex;
+  gap: 25px;
+}
+
+.img {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+}
+
+.overlay {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #D7D7D7;
+}
+
+.overlay-active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--colorSelected);
+}
+
+.containerTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 25px;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.938rem;
+  font-weight: 600;
+  color: var(--colorIcons);
+}
+
+.timeTitle {
+  margin: 0;
+  font-size: 0.625rem;
+  color: var(--colorSubText);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContainerActive {
+  width: 124px;
+  height: 147px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--backgroundColorSideBar);
+  border-radius: 20px;
+  border: 0.5px solid var(--colorSelected);
+}

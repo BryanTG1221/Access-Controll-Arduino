@@ -1,0 +1,70 @@
+.container {
+  width: 202px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--backgroundColorCerradura);
+  border-radius: 20px;
+}
+
+.content {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titleSeguridad {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--colorIcons);
+}
+
+.subtitleSeguridad {
+  margin: 0;
+  font-size: 0.625rem;
+  color: var(--colorSubText);
+}
+
+.slider {
+  width: 108px;
+  height: 35px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A7A9AD;
+  margin-left: 15px;
+}
+
+.listArrows {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  width: 27px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.imagenCerradura {
+  width: 68px;
+}

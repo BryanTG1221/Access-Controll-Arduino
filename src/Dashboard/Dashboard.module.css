@@ -1,0 +1,28 @@
+.main {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.navContainer {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navMenuButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.sectionLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

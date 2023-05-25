@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  gap: 15px;
+}
+
+.listUl {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.itemLI {
+  display: flex;
+  gap: 15px;
+}
+
+.titleSection {
+  font-size: 1.125rem;
+  margin: 0;
+  color: var(--colorIcons);
+}
