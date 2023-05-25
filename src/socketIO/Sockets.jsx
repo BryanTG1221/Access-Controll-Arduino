@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { PasswordCTX } from '../context/Password'
 import { toast } from 'react-hot-toast'
 import io from 'socket.io-client'
 
 export const SocketIO = () => {
-  const [flagPassword, setFlagPassword] = useState(false)
+  const [centimetros, setCentimetros] = useState(null)
+  const [passwordState, setPasswordState] = useContext(PasswordCTX)
   useEffect(() => {
     // Conectar al servidor WebSocket
     const socket = io('http://localhost:9000')
@@ -15,7 +17,8 @@ export const SocketIO = () => {
 
     socket.on('event', (data) => {
       console.log(data)
-    });
+      setCentimetros(data)
+    })
 
     // Manejar desconexión del servidor
     socket.on('disconnect', () => {
@@ -30,8 +33,14 @@ export const SocketIO = () => {
   }, [])
 
   useEffect(() => {
-    toast(flagPassword ? 'Abrir puerta' : 'No abrir puerta')
-  }, [flagPassword])
+    if (centimetros <= 6 && passwordState === false && centimetros !== null) {
+      console.log('ENtre')
+      setPasswordState(true)
+    } else if (centimetros > 15 && passwordState === true && centimetros !== null) {
+      console.log('ENtre')
+      setPasswordState(false)
+    }
+  }, [centimetros])
 
   return (
     <div>
@@ -39,4 +48,3 @@ export const SocketIO = () => {
     </div>
   )
 }
-

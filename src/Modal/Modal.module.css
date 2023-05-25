@@ -68,9 +68,16 @@
 .pinContainer {
   width: 40px;
   height: 60px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--colorAscent);
   background-color: rgb(224, 224, 224);
   border: 1px solid #CACACA;
   border-radius: 10px;
+}
+
+.pinContainer:focus {
+  border: 1px solid var(--colorAscent);
 }
 
 .containerList {
