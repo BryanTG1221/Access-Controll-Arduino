@@ -34,10 +34,8 @@ export const SocketIO = () => {
 
   useEffect(() => {
     if (centimetros <= 6 && passwordState === false && centimetros !== null) {
-      console.log('ENtre')
       setPasswordState(true)
     } else if (centimetros > 15 && passwordState === true && centimetros !== null) {
-      console.log('ENtre')
       setPasswordState(false)
     }
   }, [centimetros])
