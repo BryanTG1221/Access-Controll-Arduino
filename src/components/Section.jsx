@@ -1,8 +1,9 @@
+import Styles from './Section.module.css'
 
-export function SectionHome ({ title }) {
+export function SectionHome ({ title, estado }) {
   return (
-    <section>
-      <h1>{title}</h1>
+    <section className={estado ? Styles.containerActive : Styles.containerOff}>
+      <p className={Styles.label}>{title}</p>
     </section>
   )
 }

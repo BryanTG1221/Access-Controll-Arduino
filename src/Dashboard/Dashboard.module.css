@@ -26,3 +26,14 @@
   flex-direction: column;
   gap: 25px;
 }
+
+.contentMain {
+  display: flex;
+}
+
+.containerHouse3D {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}

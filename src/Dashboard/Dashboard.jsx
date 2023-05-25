@@ -2,6 +2,8 @@ import { House } from '../houseInfo/House'
 import { ButtonCircle } from '@components/Button.jsx'
 import { CamarasSection } from './CamarasSection'
 import { SeguridadSection } from './Seguridad'
+import { NavigationSection } from './NavigationSection'
+import House3D from '@assets/houseMain.png'
 import Styles from './Dashboard.module.css'
 
 export function Dahsboard () {
@@ -14,10 +16,16 @@ export function Dahsboard () {
           <ButtonCircle key='menu' type='menu' />
         </div>
       </nav>
-      <section className={Styles.sectionLeft}>
-        <CamarasSection />
-        <SeguridadSection />
-      </section>
+      <div className={Styles.contentMain}>
+        <section className={Styles.sectionLeft}>
+          <CamarasSection />
+          <SeguridadSection />
+        </section>
+        <section className={Styles.containerHouse3D}>
+          <NavigationSection />
+          <img alt='imagen' src={House3D} />
+        </section>
+      </div>
     </main>
 
   )

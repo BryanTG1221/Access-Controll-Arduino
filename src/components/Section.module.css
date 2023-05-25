@@ -1,0 +1,26 @@
+.containerActive {
+  width: 102px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorSelected);
+  color: white;
+  border-radius: 50px;
+}
+
+.containerOff {
+  width: 102px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: var(--backgroundColorSideBar);
+  border-radius: 50px;
+}
+
+.label {
+  margin: 0;
+  font-size: 0.875rem;
+}
