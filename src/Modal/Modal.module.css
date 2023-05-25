@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.518);
+}
+
+.content {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.contentPowered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.containerPIN {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.logoLabel {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--colorIcons);
+}
+
+.containerInferior {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--colorIcons);
+}
+
+.subLabel {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--colorAscent);
+}
+
+
+.pinContainer {
+  width: 40px;
+  height: 60px;
+  background-color: rgb(224, 224, 224);
+  border: 1px solid #CACACA;
+  border-radius: 10px;
+}
+
+.containerList {
+  display: flex;
+  gap: 10px;
+}
