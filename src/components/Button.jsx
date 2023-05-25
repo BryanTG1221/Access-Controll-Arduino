@@ -3,7 +3,6 @@ import { CgMenuGridO } from 'react-icons/cg'
 import Styles from '@styles/Button.module.css'
 
 export function ButtonCircle ({ type }) {
-  console.log(type)
   return (
     <button className={Styles.container}>
       {

@@ -1,6 +1,25 @@
 .container {
-  width: 110px;
-  height: 40px;
-  background-color: beige;
-  border: none;
+  width: 64px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #949494;
+  border-radius: 20px;
+  padding: 0;
+}
+
+.containerIcon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #949494;
+}
+
+.icon {
+  font-size: 16px;
+  color: var(--colorIcons);
 }

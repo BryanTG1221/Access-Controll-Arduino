@@ -16,7 +16,7 @@ export function Rutinas () {
         </li>
         <li className={Styles.content}>
           <p className={Styles.titleCard}>12:00 AM</p>
-          <div className={Styles.containerRutina}>
+          <div className={Styles.containerRutina2}>
             <div className={Styles.contentRutina}>
               <h4 className={Styles.titleRutina}>Patio</h4>
               <p className={Styles.subtitleRutina}>Enciende la alarma de seguridad</p>
