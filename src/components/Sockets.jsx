@@ -14,7 +14,7 @@ export const SocketIO = () => {
     })
 
     socket.on('event', (data) => {
-      setFlagPassword(data.myBoleean)
+      console.log(data)
     });
 
     // Manejar desconexión del servidor

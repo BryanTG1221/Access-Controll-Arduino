@@ -1,0 +1,13 @@
+
+.container {
+  width: 50px;
+  height: 50px;
+  background-color: var(--backgroundColorSideBar);
+  color: var(--colorIcons);
+  border-radius: 50%;
+  border: none;
+}
+
+.icon {
+  font-size: 24px;
+}

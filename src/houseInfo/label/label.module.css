@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--colorIcons);
+}
+
+.subTitle {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--colorSubText);
+}
+
+.ascentIcon {
+  position: relative;
+  top: 3px;
+  font-size: 1.25rem;
+  color: var(--colorAscent);
+}
+
+.iconHome {
+  color: var(--colorAscent);
+  position: relative;
+  top: 2px;
+}
