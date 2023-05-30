@@ -17,6 +17,7 @@ export const SocketIO = () => {
 
     socket.on('event', (data) => {
       setCentimetros(data)
+      console.log(data)
     })
 
     // Manejar desconexión del servidor
