@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Styles from './Modal.module.css'
 import LogoZT from '@assets/ztStudiosLogo.png'
 import { toast } from 'react-hot-toast'
+import { setPasswordState } from '@context/Password'
 export function ModalPasword () {
   const passwordList = {
     pin1: '1',
@@ -39,9 +40,11 @@ export function ModalPasword () {
   }
   useEffect(() => {
     if (pin1 === passwordList.pin1 && pin2 === passwordList.pin2 && pin3 === passwordList.pin3 && pin4 === passwordList.pin4) {
-      console.log('Acceso permitido')
       fetch('http://127.0.0.1:9000/api/openPluma')
-      toast('Acceso permitido')
+      toast.success('Acceso permitido')
+      setTimeout(() => {
+        setPasswordState(false)
+      })
     }
   }, [pin1, pin2, pin3, pin4])
   return (
