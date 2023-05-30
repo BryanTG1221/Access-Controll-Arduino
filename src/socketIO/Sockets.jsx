@@ -16,7 +16,6 @@ export const SocketIO = () => {
     })
 
     socket.on('event', (data) => {
-      console.log(data)
       setCentimetros(data)
     })
 

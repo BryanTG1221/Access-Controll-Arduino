@@ -6,14 +6,14 @@ import { ModalPasword } from './Modal/Modal'
 import './styles/styles.css'
 
 function App () {
-  const [passwordState] = useContext(PasswordCTX)
+  const [passwordState,, entrandingCarro] = useContext(PasswordCTX)
 
   return (
     <div className='App'>
       <Dahsboard />
       <SideBar />
       {
-        passwordState ? <ModalPasword /> : false
+        passwordState && entrandingCarro === false ? <ModalPasword /> : false
       }
     </div>
   )
